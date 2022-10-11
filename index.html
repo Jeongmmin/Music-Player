@@ -6,29 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Music App</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script type="module" src="./src/main.js"></script>
   </head>
   <body>
-      <div class="app-cover flex-row">
-        <div class="app-cover__bg-artwork"></div>
-        <div class="app-cover__artwork-cover-layer"></div>
-        <div class="app-cover__player flex-column">
-          <div class="player__play-now-track flex-column active">
-            <div class="album-name">Dawn</div>
-            <div class="track-name">Skylike - Dawn</div>
-            <div class="track-time flex-row">
-              <div class="track-time__current-time">00:00</div>
-              <div class="track-time__track-length">03:09</div>
-            </div>
-            <div class="search-area flex-column">
-              <div class="search-area__hover-time-box">01:00</div>
-              <div class="search-area__search-hover"></div>
-              <div class="search-area__play-now-bar"></div>
-            </div>
+    <div class="app-cover flex-row">
+      <div class="app-cover__bg-artwork"></div>
+      <div class="app-cover__artwork-cover-layer"></div>
+      <div class="app-cover__player flex-column">
+        <div class="player__play-now-track flex-column active">
+          <div class="album-name">Dawn</div>
+          <div class="track-name">Skylike - Dawn</div>
+          <div class="track-time flex-row">
+            <div class="track-time__current-time">00:00</div>
+            <div class="track-time__track-length">03:09</div>
           </div>
-          <div class="player__player-content flex-row">
-            <div class="player-content__album-art flex-column">
-              <!-- <img
+          <div class="search-area flex-column">
+            <div class="search-area__hover-time-box">01:00</div>
+            <div class="search-area__search-hover"></div>
+            <div class="search-area__play-now-bar"></div>
+          </div>
+        </div>
+        <div class="player__player-content flex-row">
+          <div class="player-content__album-art flex-column">
+            <!-- <img
                 src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_1.jpg"
                 class="active"
                 class="_1"
@@ -49,28 +56,22 @@
                 src="https://raw.githubusercontent.com/himalayasingh/music-player-1/master/img/_5.jpg"
                 class="_5"
               /> -->
-              <div class="inner-circle"></div>
-              <div class="buffer-box">Buffering ...</div>
+            <div class="inner-circle"></div>
+            <div class="loading-box none">Loading ...</div>
+          </div>
+          <div class="player-content__player-controls flex-row">
+            <div class="button previous-btn flex-row">
+              <i class="fas fa-backward"></i>
             </div>
-            <!-- <div id="player-content__player-controls">
-              <div class="control">
-                <div class="button" id="play-previous">
-                  <i class="fas fa-backward"></i>
-                </div>
-              </div>
-              <div class="control">
-                <div class="button" id="play-pause-button">
-                  <i class="fas fa-play"></i>
-                </div>
-              </div>
-              <div class="control">
-                <div class="button" id="play-next">
-                  <i class="fas fa-forward"></i>
-                </div>
-              </div>
-            </div> -->
+            <div class="button play-btn flex-row">
+              <i class="fas fa-play"></i>
+            </div>
+            <div class="button next-btn flex-row">
+              <i class="fas fa-forward"></i>
+            </div>
           </div>
         </div>
       </div>
+    </div>
   </body>
 </html>
